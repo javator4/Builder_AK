@@ -33,16 +33,16 @@ public class App {
                 "http://api.apixu.com/v1/current.json",
                 "91977fee60544a1e88170057191407"
         );
-WeatherForecast weatherForecast
-        = new OrgImplementation(weatherService, "Torun");
-WeatherForecast weatherForecast1
-        = new FasterImplementation(weatherService, "Torun");
+        WeatherForecast weatherForecast
+                = new OrgImplementation(weatherService, "Torun");
+        WeatherForecast weatherForecast1
+                = new FasterImplementation(weatherService, "Torun");
 
         System.out.println(weatherForecast.getWeather());
         System.out.println(weatherForecast1.getWeather());
 
-      //  Current current = weatherService.getJSONData("Torun").getCityWeather();
-      //  Location location = weatherService.getJSONData("Torun").getLocation();
+        //  Current current = weatherService.getJSONData("Torun").getCityWeather();
+        //  Location location = weatherService.getJSONData("Torun").getLocation();
 
         //  System.out.println("LAT: " + location.getLat());
         //System.out.println("LON: " + location.getLon());
