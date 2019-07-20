@@ -38,7 +38,7 @@ public class OrgImplementation implements WeatherForecast {
                 .feelslike_c(Float.parseFloat(feelslike_c))
                 .build();
 
-        weather.setCurrent(current);//%)
+        weather.setCurrent(current);//%
         weather.setLocation(location);//$
 
         return weather;
