@@ -9,6 +9,13 @@ import java.nio.charset.Charset;
 
 public abstract class AbstractJsonData {
 
+    //pola z WeatherService:
+    //czesc wspolna z klasa weatherService i klasa abstrakcyjna
+    private String url;
+    private String apiKey;
+    private String finalURL;
+    private String data = "";
+
 //skopiowanie z WeatherService:
     public String getJSONData(String city) {
         if(this.data.isEmpty()) {
