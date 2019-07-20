@@ -18,9 +18,13 @@ public abstract class AbstractJsonData {
     private String apiKey = "91977fee60544a1e88170057191407";
     private String finalURL;
     private String data = "";
+    private String city;
 
 //robimy konstruktor:
     public AbstractJsonData() {
+        this.finalURL = this.url + "?key=" + apiKey + "&q=";
+    }
+    public void build(){
         this.finalURL = this.url + "?key=" + apiKey + "&q=";
     }
 //skopiowanie z WeatherService:

@@ -9,12 +9,14 @@ import java.io.IOException;
 public class JsonDataFaster extends AbstractJsonData {
     @Override
     Weather getWeather() {
+
         //wklejenie z FasterImplementation
         ObjectMapper objectMapper = new ObjectMapper();
         Weather weather = null;
         try {
-            weather = objectMapper.readValue(this.getJSONData("Torun"),
+            weather = objectMapper.readValue(this.getJSONData(this.getCity()),
                     Weather.class)
+
             ;
             objectMapper.writeValue(new File("data.json"), weather);
             System.out.println(weather.getLocation().getCountry());
