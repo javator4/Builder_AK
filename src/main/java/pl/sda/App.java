@@ -41,6 +41,9 @@ public class App {
         System.out.println(weatherForecast.getWeather());
         System.out.println(weatherForecast1.getWeather());
 
+        JsonDataFaster jsonDataFaster = new JsonDataFaster();
+        jsonDataFaster .getWeather();
+
         //  Current current = weatherService.getJSONData("Torun").getCityWeather();
         //  Location location = weatherService.getJSONData("Torun").getLocation();
 

@@ -11,11 +11,15 @@ public abstract class AbstractJsonData {
 
     //pola z WeatherService:
     //czesc wspolna z klasa weatherService i klasa abstrakcyjna
-    private String url;
-    private String apiKey;
+    private String url = "http://api.apixu.com/v1/current.json";
+    private String apiKey = "91977fee60544a1e88170057191407";
     private String finalURL;
     private String data = "";
 
+//robimy konstruktor:
+    public AbstractJsonData() {
+        this.finalURL = this.url + "?key=" + apiKey + "&q=";
+    }
 //skopiowanie z WeatherService:
     public String getJSONData(String city) {
         if(this.data.isEmpty()) {
