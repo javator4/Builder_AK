@@ -20,6 +20,7 @@ public abstract class AbstractJsonData {
     private String data = "";
     private String city;
 
+
 //robimy konstruktor:
     public AbstractJsonData() {
         this.finalURL = this.url + "?key=" + apiKey + "&q=";

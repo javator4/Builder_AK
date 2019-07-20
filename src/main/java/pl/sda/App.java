@@ -52,6 +52,13 @@ public class App {
 
         System.out.println("TEST");
 
+        JsonDataOrg jsonDataOrg = new JsonDataOrg();
+        jsonDataOrg.setApiKey("91977fee60544a1e88170057191407");
+        jsonDataOrg.setUrl("http://api.apixu.com/v1/current.json");
+        jsonDataOrg.setCity("Warszawa");
+        jsonDataOrg.build();
+        System.out.println(jsonDataOrg.getWeather());
+
         //  Current current = weatherService.getJSONData("Torun").getCityWeather();
         //  Location location = weatherService.getJSONData("Torun").getLocation();
 
