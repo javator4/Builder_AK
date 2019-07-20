@@ -41,7 +41,10 @@ public class App {
         System.out.println(weatherForecast.getWeather());
         System.out.println(weatherForecast1.getWeather());
 
+
         JsonDataFaster jsonDataFaster = new JsonDataFaster();
+        jsonDataFaster.setApiKey("91977fee60544a1e88170057191407");
+        jsonDataFaster.setUrl("http://api.apixu.com/v1/current.json");
         jsonDataFaster .getWeather();
 
         //  Current current = weatherService.getJSONData("Torun").getCityWeather();

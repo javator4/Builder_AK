@@ -1,11 +1,14 @@
 package pl.sda;
 
+import lombok.Data;
 import org.apache.commons.io.IOUtils;
 import pl.sda.model.Weather;
 
 import java.io.IOException;
 import java.net.URL;
 import java.nio.charset.Charset;
+//dodanie getterow i setterow :
+@Data
 
 public abstract class AbstractJsonData {
 
