@@ -33,6 +33,7 @@ public class App {
                 "http://api.apixu.com/v1/current.json",
                 "91977fee60544a1e88170057191407"
         );
+        //stworzenie 2 klas:
         WeatherForecast weatherForecast
                 = new OrgImplementation(weatherService, "Torun");
         WeatherForecast weatherForecast1

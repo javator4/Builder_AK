@@ -13,7 +13,7 @@ public class JsonDataOrg extends AbstractJsonData {
     @Override
     Weather getWeather() {
         JSONObject jsonObject =
-                new JSONObject(this.getJSONData(this.getCity()));
+                new JSONObject(this.getJSONData(this.city));
         String lat = jsonObject.getJSONObject("location")
                 .get("lat").toString();
         String lon = jsonObject.getJSONObject("location")
